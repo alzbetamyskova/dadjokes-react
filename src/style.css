@@ -23,7 +23,7 @@ p {
 
 div {
   display: block;
-}
+} */
 
 button {
   appearance: auto;
@@ -103,7 +103,7 @@ button {
 
 .btn-like--up {
   background-color: #00e268;
-  background-image: url(img/like-up.png);
+  background-image: url(./img/like-up.png);
 }
 
 .likes-count--up {
@@ -114,6 +114,11 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0 0.5rem;
+}
+
+.btn-like--down {
+  background-color: #ff5654;
+  background-image: url(img/like-down.png);
 }
 
 .likes-count--down {
