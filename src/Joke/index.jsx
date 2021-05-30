@@ -15,7 +15,7 @@ const Joke = ({userAvatar, userName, text, likes, dislikes}) => {
         <p className="joke__text">
           {text}
         </p>
-        <CounterLikes />    
+        <CounterLikes like={likes} dislike={dislikes}/>
       </div>
     </div>
   );

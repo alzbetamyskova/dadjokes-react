@@ -1,4 +1,4 @@
-export const jokes = [
+const jokes = [
   {
     id: 'user01',
     avatar: 'https://raw.githubusercontent.com/Czechitas-podklady-WEB/dadjokes/main/users/user01.png',
@@ -81,3 +81,5 @@ export const jokes = [
     dislikes: 9,
   },
 ];
+
+export default jokes;
