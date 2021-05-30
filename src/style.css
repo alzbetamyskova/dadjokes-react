@@ -1,46 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
-}
-
-body {
-  display: block;
-  margin: 8px;
-}
-
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-div {
-  display: block;
-} */
-
-button {
-  appearance: auto;
-  writing-mode: horizontal-tb !important;
-  text-rendering: auto;
-  color: -internal-light-dark(black, white);
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: center;
-  align-items: flex-start;
-  margin: 0em;
-  font: 400 13.3333px Arial;
-  padding: 1px 6px;
+  font-family: sans-serif;
 }
 
 .container {
@@ -89,6 +52,20 @@ button {
   margin-top: 1rem;
 }
 
+.likes-count {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+
+.likes-count--up {
+  color: #00e268;
+}
+
+.likes-count--down {
+  color: #ff5654;
+}
+
 .btn-like {
   border: none;
   outline: none;
@@ -103,24 +80,10 @@ button {
 
 .btn-like--up {
   background-color: #00e268;
-  background-image: url(./img/like-up.png);
-}
-
-.likes-count--up {
-  color: #00e268;
-}
-
-.likes-count {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0 0.5rem;
+  background-image: url('./img/like-up.png');
 }
 
 .btn-like--down {
   background-color: #ff5654;
-  background-image: url(img/like-down.png);
-}
-
-.likes-count--down {
-  color: #ff5654;
+  background-image: url('./img/like-down.png');
 }
