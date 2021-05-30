@@ -1,27 +1,30 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { render } from 'react-dom';
 import './style.css';
 
 import Joke from './Joke';
-import jokes from './joke.js';
+import {jokes} from './jokes.js';
+
 
 const App = () => {
+  console.log(jokes);
 
-  // let jokesHtml = ;
-  // jokes.forEach(joke => jokesHtml += <Joke props={joke}/>)
+  // const [jokeList, setJokeList] = useState([]);
+
+  // useEffect(() => setJokeList(jokes), []);
 
   return (
   <div className="container">
-  {jokes.map((j) => (
-          <Joke 
-            key={j.id}
-            userAvatar={j.avatar} 
-            userName={j.name}
-            text={j.text}
-            likes={j.likes}
-            dislikes={j.dislikes}
-          />
-        ))}
+    {jokes.map((j) => (
+      <Joke 
+        key={j.id}
+        userAvatar={j.avatar} 
+        userName={j.name}
+        text={j.text}
+        likes={j.likes}
+        dislikes={j.dislikes}
+      />
+    ))}
   </div>
   );
 };
