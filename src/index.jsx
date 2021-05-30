@@ -7,12 +7,6 @@ import {jokes} from './jokes.js';
 
 
 const App = () => {
-  console.log(jokes);
-
-  // const [jokeList, setJokeList] = useState([]);
-
-  // useEffect(() => setJokeList(jokes), []);
-
   return (
   <div className="container">
     {jokes.map((j) => (
